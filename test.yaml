@@ -1,0 +1,33 @@
+name: Basic YAML sintax
+age: 30
+address: "Gotham City 92370"
+active: true
+
+#Representation of an object
+key:
+  key: value
+  key2: 33
+  key3:
+    key: value
+    key2: value
+
+#Representation of an array
+array: 
+  -item1
+  -item2
+  -item3
+
+#Representation of an array of objects. all the elements of each index has to be alligned in order 
+#to be considered as part of the current index
+objectArray:
+  - key: itemA
+    key2: itemB
+  - key: item1
+    key2: item2
+
+#the > symbol allos to manage break lines in a long string
+longText: > 
+  kjñlkjñlkjlkjñljlkñ
+  jkbjkbjkj
+  jknknlknmlñ
+  mkmñlmñ
