@@ -1,4 +1,5 @@
-name: Shell Commands
+name: First Workflow
+#Running some basic shell commands
 
 on: [push]
 
