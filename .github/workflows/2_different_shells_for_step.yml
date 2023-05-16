@@ -16,4 +16,12 @@ jobs:
         run: |
           import platform
           print(platform.processor())
-        shell: python
+        shell: python #indicates what shell in specific to use
+  run-windows-commands:
+    runs-on: windows-latest
+    steps: 
+        - name: Directory PowerShell
+          run: Get-Location
+        - name: Drectory Bash
+          run: pwd
+          shell: bash #this one needed to be indicated, because we are running a bash command in a windows OS
